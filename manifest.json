@@ -1,0 +1,11 @@
+{
+    "manifest_version": 2,
+	"browser_action": {
+		"default_icon": "logo.png",
+		"default_popup": "popup.html"
+	},
+    "converted_from_user_script": true,
+    "description":  "The official Extension of the Sayre Area School District.",
+    "name":         "Sayre Area School District Extension",
+    "version":      "1"
+}
