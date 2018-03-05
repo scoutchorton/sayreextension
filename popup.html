@@ -6,15 +6,11 @@
  -->
 <html>
   <head>
-    <title>Getting Started Extension's Popup</title>
+    <title>Sayre Area School District</title>
     <style type="text/css">
       body {
         margin: 10px;
         white-space: nowrap;
-      }
-
-      h1 {
-        font-size: 15px;
       }
 
       #container {
@@ -22,6 +18,10 @@
         display: flex;
         justify-content: space-between;
       }
+	  
+	  table > tr > td {
+		width: 50%;
+	  }
     </style>
 
     <!--
@@ -34,16 +34,22 @@
   </head>
 
   <body>
-    <h1>Background Color Changer</h1>
-    <div id="container">
-      <a href="blank.html">Choose a color</a>
-      <select id="dropdown">
-        <option selected disabled hidden value=''></option>
-        <option value="white">White</option>
-        <option value="pink">Pink</option>
-        <option value="green">Green</option>
-        <option value="yellow">Yellow</option>
-      </select>
-    </div>
+	<!--
+	Resources
+	|
+	\_ Math
+	\_ Science
+	\_ History
+	\_ English
+	\_ Art
+	\_ Health
+	
+	-->
+    <h3>Sayre Area School District</h3>
+    <table id="container">
+		<tr>
+			<<td><img src="./math.svg" /></td>
+		</tr>
+    </table>
   </body>
 </html>
