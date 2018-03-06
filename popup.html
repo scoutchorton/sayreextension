@@ -5,53 +5,84 @@
  value "popup.html".
  -->
 <html>
-  <head>
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
-    <title>Sayre Area School District</title>
-    <style type="text/css">
-      body {
-        margin: 10px;
-        white-space: nowrap;
-		font-family: Source Sans, Source Sans Pro, sans-serif;
-      }
+		<head>
+		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+		<title>Sayre Area School District</title>
+		<style type="text/css">
+			body {
+				margin: 10px;
+				white-space: nowrap;
+				font-family: Source Sans, Source Sans Pro, sans-serif;
+			}
 
-      #container {
-        align-items: center;
-        display: flex;
-        justify-content: space-between;
-      }
-	  
-	  table > tr > td {
-		width: 50%;
-	  }
-    </style>
+			#container {
+				width: auto;
+				align-items: center;
+				display: flex;
+				justify-content: space-between;
+			}
 
-    <!--
-      - JavaScript and HTML must be in separate files: see our Content Security
-      - Policy documentation[1] for details and explanation.
-      -
-      - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
-    -->
-    <script src="popup.js"></script>
-  </head>
+			table > tr > td {
+				width: 75%;
+			}
+			table > tr > td > img {
+				width: 75%;
+			}
+			</style>
 
-  <body>
-	<!--
-	Resources
-	|
-	\_ Math
-	\_ Science
-	\_ History
-	\_ English
-	\_ Art
-	\_ Health
-	
-	-->
-    <h3>Sayre Area School District</h3>
-    <table id="container">
-		<tr>
-			<<td><img src="./math.svg" /></td>
-		</tr>
-    </table>
-  </body>
+			<!--
+			- JavaScript and HTML must be in separate files: see our Content Security
+			- Policy documentation[1] for details and explanation.
+			-
+			- [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
+		-->
+		<script src="popup.js"></script>
+	</head>
+
+	<body>
+		<!--
+			Resources
+			|
+			\_ Math
+			|  \_ Desmos
+			|  |  \_ Scientific Calculator
+			|  \_ Geogebra
+			|     \_ Geometry Graphing
+			|     \_ Graphing Calculator
+			\_ Science
+			\_ History
+			\_ English
+			\_ Art
+			\_ Health
+		-->
+    	<h3>Sayre Area School District</h3>
+		<center>
+			<table id="container">
+				<tr>
+					<th>Math</th>
+					<th>Science</th>
+				</tr>
+				<tr>
+					<td><img src="./math.svg" /></td>
+					<td><img src="./science.svg" /></td>
+				</tr>
+				<tr>
+					<th>History</th>
+					<th>English</th>
+				</tr>
+				<tr>
+					<td><img src="./history.svg" /></td>
+					<td><img src="./english.svg" /></td>
+				</tr>
+				<tr>
+					<th>Art</th>
+					<th>Health</th>
+				</tr>
+				<tr>
+					<td><img src="./art.svg" /></td>
+					<td><img src="./health.svg" /></td>
+				</tr>
+			</table>
+		</center>
+	</body>
 </html>
